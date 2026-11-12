@@ -1,0 +1,115 @@
+{
+  "_como_usar": "Para cambiar el modelo: copia el .glb (o .gltf) en public/visor3d/modelos y escribe su nombre en 'modelo'. Las posiciones usan metros del modelo con Y hacia arriba. Si el modelo nuevo no coincide con estas vistas, borra 'inicio', 'centro', 'radio', 'limites' y 'vistas' y el visor las calcula solo; para escribir vistas nuevas, abre la vista libre, acomoda la cámara y presiona P (copia la posición). Una vista con \"fijo\": true no se aleja en celular (útil para vistas por dentro).",
+  "modelo": "modelos/colegio.glb",
+  "escala": 1,
+  "exposicion": 1,
+  "sombras": true,
+  "girar": true,
+  "cielo": [
+    "#b4d0f2",
+    "#5592ec",
+    "#1650dc"
+  ],
+  "niebla": [
+    320,
+    1500
+  ],
+  "sol": {
+    "direccion": [
+      -0.31,
+      0.588,
+      0.745
+    ],
+    "intensidad": 2.8
+  },
+  "centro": [
+    20,
+    0,
+    -15
+  ],
+  "radio": 130,
+  "distancia": [
+    2,
+    380
+  ],
+  "anguloMax": 86,
+  "limites": {
+    "min": [
+      -90,
+      0,
+      -110
+    ],
+    "max": [
+      130,
+      40,
+      80
+    ]
+  },
+  "inicio": {
+    "camara": [
+      -48,
+      52,
+      78
+    ],
+    "objetivo": [
+      18,
+      0,
+      -14
+    ]
+  },
+  "vistas": [
+    {
+      "nombre": "La fachada",
+      "camara": [
+        2,
+        9,
+        56
+      ],
+      "objetivo": [
+        2,
+        5,
+        0
+      ]
+    },
+    {
+      "nombre": "El mural",
+      "camara": [
+        -9,
+        2.6,
+        14
+      ],
+      "objetivo": [
+        8,
+        5.2,
+        0
+      ]
+    },
+    {
+      "nombre": "Bajo el arcotecho",
+      "camara": [
+        65.7,
+        2.4,
+        -16
+      ],
+      "objetivo": [
+        65.7,
+        3.5,
+        -44
+      ],
+      "fijo": true
+    },
+    {
+      "nombre": "Vista aérea",
+      "camara": [
+        21,
+        51,
+        9
+      ],
+      "objetivo": [
+        62,
+        0,
+        -29
+      ]
+    }
+  ]
+}
