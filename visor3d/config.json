@@ -1,6 +1,6 @@
 {
-  "_como_usar": "Para cambiar el modelo: copia el .glb (o .gltf) en public/visor3d/modelos y escribe su nombre en 'modelo'. Las posiciones usan metros del modelo con Y hacia arriba. Si el modelo nuevo no coincide con estas vistas, borra 'inicio', 'centro', 'radio', 'limites' y 'vistas' y el visor las calcula solo; para escribir vistas nuevas, abre la vista libre, acomoda la cámara y presiona P (copia la posición). Una vista con \"fijo\": true no se aleja en celular (útil para vistas por dentro).",
-  "modelo": "modelos/colegio.glb",
+  "_como_usar": "Modelo: el detallado de Antigravity (cgb_campus.glb optimizado; ver visor3d-src/LEEME.md). Para cambiarlo, copia el .glb en public/visor3d/modelos y escribe su nombre en 'modelo'. Las posiciones usan metros del modelo con Y hacia arriba (en este modelo: x = oriente, z = sur). Si un modelo nuevo no coincide con estas vistas, borra 'inicio', 'centro', 'radio', 'limites' y 'vistas' y el visor las calcula solo; para escribir vistas nuevas, abre la vista libre, acomoda la cámara y presiona P (copia la posición). Una vista con \"fijo\": true no se aleja en celular (útil para vistas por dentro).",
+  "modelo": "modelos/colegio-detallado.glb",
   "escala": 1,
   "exposicion": 1,
   "sombras": true,
@@ -16,16 +16,16 @@
   ],
   "sol": {
     "direccion": [
-      -0.31,
-      0.588,
-      0.745
+      0.622,
+      0.543,
+      0.564
     ],
     "intensidad": 2.8
   },
   "centro": [
-    20,
+    -15,
     0,
-    -15
+    -20
   ],
   "radio": 130,
   "distancia": [
@@ -35,80 +35,109 @@
   "anguloMax": 86,
   "limites": {
     "min": [
-      -90,
+      -110,
       0,
-      -110
+      -130
     ],
     "max": [
-      130,
+      80,
       40,
-      80
+      90
     ]
   },
   "inicio": {
     "camara": [
-      -48,
+      78,
       52,
-      78
+      48
     ],
     "objetivo": [
-      18,
+      -14,
       0,
-      -14
+      -18
     ]
   },
   "vistas": [
     {
       "nombre": "La fachada",
       "camara": [
-        2,
+        33,
         9,
-        56
+        -2
       ],
       "objetivo": [
-        2,
+        0,
         5,
-        0
-      ]
+        -2
+      ],
+      "fijo": true
     },
     {
       "nombre": "El mural",
       "camara": [
-        -9,
+        14,
         2.6,
-        14
+        9
       ],
       "objetivo": [
-        8,
+        0,
         5.2,
-        0
+        -8
       ]
+    },
+    {
+      "nombre": "La cafetería",
+      "camara": [
+        -26,
+        1.7,
+        -35.0
+      ],
+      "objetivo": [
+        -42,
+        2.0,
+        -35.3
+      ],
+      "fijo": true
     },
     {
       "nombre": "Bajo el arcotecho",
       "camara": [
-        65.7,
+        -16,
         2.4,
-        -16
+        -63.3
       ],
       "objetivo": [
-        65.7,
+        -44,
         3.5,
-        -44
+        -63.3
+      ],
+      "fijo": true
+    },
+    {
+      "nombre": "La cancha",
+      "camara": [
+        24,
+        3,
+        -66
+      ],
+      "objetivo": [
+        -2,
+        2,
+        -52
       ],
       "fijo": true
     },
     {
       "nombre": "Vista aérea",
       "camara": [
-        21,
+        9,
         51,
-        9
+        -21
       ],
       "objetivo": [
-        62,
+        -29,
         0,
-        -29
+        -62
       ]
     }
   ]
